@@ -9,33 +9,44 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+     
 }
 .container {
-	/* background-color: antiquewhite; */
 	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+     perspective: 100px;
 }
 .card {
+     perspective: 100px;
 	min-height: 85vh;
 	width: 35rem;
-	/* background-color: aqua; */
-	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.15);
+	box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.2);
 	border-radius: 30px;
 	padding: 0 5rem;
+     
 }
+.card h1 {
+     padding: 3rem 0 0;
+	color: #2e2f62;
+	font-size: 3.2rem;
+	text-align: center;
+	font-weight: 500;
+}
+
 .product {
 	min-height: 35vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: rosybrown; */
+     perspective: 1000px;
 }
 /* not in */
 .card img {
 	width: 325px;
 	z-index: 3;
+     transform-style: preserve-3d;
 }
 .circle {
 	width: 17rem;
@@ -54,7 +65,7 @@ body {
 .info h3 {
 	text-align: center;
 	font-size: 1.3rem;
-	padding: 2rem 0;
+	padding: .5rem 0 2rem;
 	color: #2e2f62;
 	font-weight: 300;
 }
@@ -74,14 +85,14 @@ body {
 	border-radius: 30px;
 	cursor: pointer;
 	font-weight: bold;
-	color: #2e2f62;
+	transition: all 0.6s ease;
 }
-.svars .active {
+.svars button:hover {
 	background: #f6332c;
 	color: white;
 }
 .purchase {
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 .purchase button {
 	width: 100%;
@@ -92,4 +103,9 @@ body {
 	cursor: pointer;
 	border-radius: 30px;
 	font-weight: bolder;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0 .35);
+     transition: all .5s ease;
+}
+.purchase button:hover{
+     background: #cf0d06;
 }
